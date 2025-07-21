@@ -2,8 +2,11 @@ import React from 'react'
 import { Scissors, Star } from 'lucide-react'
 import { ButtonGeneral } from '@globals'
 import { generalConfig } from '@util/generalConfig'
-import Barber1Img from '@img/TeamWork/Barbero1.webp'
-import Barber2Img from '@img/TeamWork/Barbero2.webp'
+import Barber1Img from '@img/TeamWork/Barbero1.jpg'
+import Barber2Img from '@img/TeamWork/Barbero2.jpg'
+import Barber3Img from '@img/TeamWork/Barbero3.jpg'
+import Barber4Img from '@img/TeamWork/Barbero4.jpg'
+import Barber5Img from '@img/TeamWork/Barbero5.jpg'
 const Badge = ({ children, className, variant = "default" }) => {
   const baseClasses = "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium";
   const variantClasses = variant === "secondary" 
@@ -36,18 +39,39 @@ const CardContent = ({ children, className }) => {
 const TeamWork = () => {
   const teamMembers = [
     {
-      name: "Oscar Rodríguez",
+      name: "Carlos",
       role: "Barbero Profesional",
       image: Barber1Img,
-      experience: "16+ años",
-      specialties: ["Cortes clásicos", "Fade", "Barba"],
+      experience: "10+ años",
+      specialties: ["Cortes exclusivos", "Fade", "Barba"],
     },
     {
-      name: "Daniel Stiven Cano",
-      role: "Barbero Especialista",
+      name: "Elkin",
+      role: "Barbero Profesional",
       image: Barber2Img, 
-      experience: "8+ años",
-      specialties: ["Diseños", "Afeitado", "Styling"],
+      experience: "10+ años",
+      specialties: ["Cortes exclusivos", "Fade", "Barba"],
+    },
+    {
+      name: "Andres",
+      role: "Barbero Profesional",
+      image: Barber3Img, 
+      experience: "10+ años",
+      specialties: ["Cortes exclusivos", "Fade", "Barba"],
+    },
+    {
+      name: "Alex",
+      role: "Barbero Profesional",
+      image: Barber4Img, 
+      experience: "10+ años",
+      specialties: ["Cortes exclusivos", "Fade", "Barba"],
+    },
+    {
+      name: "Sebas",
+      role: "Barbero Profesional",
+      image: Barber5Img, 
+      experience: "10+ años",
+      specialties: ["Cortes exclusivos", "Fade", "Barba"],
     },
   ];
 
@@ -57,7 +81,7 @@ const TeamWork = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Scissors className="h-8 w-8 text-slate-600" />
+            <Scissors className="h-8 w-8 text-stone-600" />
             <h2 className={generalConfig.classTitlesGeneral}>
               Nuestro Equipo
             </h2>

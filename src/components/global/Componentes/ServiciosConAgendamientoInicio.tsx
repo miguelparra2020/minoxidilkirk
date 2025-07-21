@@ -100,7 +100,7 @@ const ServiciosConAgendamientoInicio = () => {
                           mb-4
                         `}
                       >
-                        <div className="mb-4 p-3 bg-slate-500 rounded-full">
+                        <div className="mb-4 p-3 bg-stone-500 rounded-full">
                           <Scissors className="h-6 w-6 text-neutral-200" />
                         </div>
                         

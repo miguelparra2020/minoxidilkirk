@@ -15,7 +15,7 @@ export const seoConfig = {
 		width: 1200,
 		height: 630
 	},
-	siteName: "Mi compañía", // Change this to your website's name,
+	siteName: "MAT", // Change this to your website's name,
 	twitter: {
 		card: "Descripción de la actividad de la compañía"
 	}
@@ -25,8 +25,8 @@ export const seoConfig = {
  * Defines the configuration for PWA webmanifest.
  */
 export const manifest: Partial<ManifestOptions> = {
-	name: "Dinastía Digital", // Change this to your website's name.
-	short_name: "Dinastía Digital", // Change this to your website's short name.
+	name: "Comercyo", // Change this to your website's name.
+	short_name: "Comercyo", // Change this to your website's short name.
 	description:
 		"Descripción de la actividad de la compañía", // Change this to your websites description.
 	theme_color: "#30E130", // Change this to your primary color.

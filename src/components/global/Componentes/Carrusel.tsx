@@ -76,9 +76,9 @@ const Carrusel = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <Scissors className="h-8 w-8 text-slate-400" />
+            <Scissors className="h-8 w-8 text-stone-600" />
             <h1 className={generalConfig.classTitlesGeneral}>Cortes en Tendencia</h1>
-            <Scissors className="h-8 w-8 text-slate-400 scale-x-[-1]" />
+            <Scissors className="h-8 w-8 text-stone-600 scale-x-[-1]" />
           </div>
           <p className={generalConfig.classParagraphGeneral}>
             Descubre los estilos más populares y modernos. Cada corte es una obra de arte diseñada para realzar tu
@@ -110,7 +110,7 @@ const Carrusel = () => {
 
                       {/* Popular Badge */}
                       {haircut.popular && (
-                        <div className="absolute top-6 left-6 bg-slate-400 text-slate-900 px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
+                        <div className="absolute top-6 left-6 bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
                           <Star className="h-4 w-4 fill-current" />
                           Popular
                         </div>
@@ -132,7 +132,7 @@ const Carrusel = () => {
                               <Star
                                 key={i}
                                 className={`h-5 w-5 ${
-                                  i < Math.floor(haircut.rating) ? "text-slate-400 fill-current" : "text-slate-600"
+                                  i < Math.floor(haircut.rating) ? "text-stone-500 fill-current" : "text-slate-600"
                                 }`}
                               />
                             ))}
@@ -186,7 +186,7 @@ const Carrusel = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "bg-slate-500 scale-125" : "bg-slate-300 hover:bg-slate-400"
+                index === currentIndex ? "bg-yellow-400 scale-125" : "bg-stone-300 hover:bg-slate-400"
               }`}
             />
           ))}

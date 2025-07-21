@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Logo */}
                     <div className="flex items-center mb-4 md:mb-0">
                         <span className="text-lg font-semibold flex items-center">
-                            Class Barber Shop
+                            MAT
                         </span>
                     </div>
                     

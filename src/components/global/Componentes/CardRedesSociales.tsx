@@ -5,7 +5,7 @@ const CardRedesSociales = () => {
         classCardContent,
         textInicialesLogo,
         gradientFrom = "slate-500",
-        gradientVia = "gray-500",
+        gradientVia = "yellow-500",
         gradientTo = "stone-500",
         shadowColor = "amber-500/20",
         innerBg = "black/80",
@@ -27,18 +27,16 @@ const CardRedesSociales = () => {
             </div>
 
       {/* Company name */}
-      <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-400 via-gray-400 to-stone-400 mb-2">
+      {/* <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-400 via-gray-400 to-stone-400 mb-2">
         Class Barber
-      </h1>
+      </h1> */}
 
       {/* Glowing line */}
       <div className="w-16 h-1 bg-gradient-to-r from-slate-500 via-stone-600 to-gray-500 rounded-full mb-4 shadow-lg shadow-purple-500/20" />
 
       {/* Company mission */}
       <p className="text-gray-300 mb-8 max-w-xs">
-        "No es solo una barbería, es una experiencia exclusiva para el caballero moderno que busca calidad y estilo 
-        en un ambiente elegante. Ofrecemos servicios de cortes de cabello, cejas, barba y más, brindamos una atención 
-        personalizada que asegura cada detalle. Ven y vive un servicio clásico diseñado para ti."
+        "En MAT, cada corte, cada detalle y cada atención están pensados para quienes no se conforman con lo común. Somos más que una barbería: somos un punto de encuentro entre elegancia, precisión y estilo urbano. Nuestro equipo de barberos expertos está listo para darte un servicio de primer nivel en un ambiente moderno, exclusivo y con el mejor flow de la ciudad."
       </p>
 
       {/* Social media buttons */}
