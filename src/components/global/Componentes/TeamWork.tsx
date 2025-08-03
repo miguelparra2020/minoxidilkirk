@@ -147,9 +147,9 @@ const TeamWork = () => {
         <div className="mt-16 text-center">
           <div className="bg-white/60  backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
             <p className="text-lg text-stone-500  leading-relaxed max-w-4xl mx-auto mb-8">
-              Somos un equipo de profesionales con amplia experiencia en el mundo de la barbería. Nos dedicamos con
-              pasión a brindar el mejor servicio, utilizando técnicas modernas y tradicionales para que cada cliente se
-              sienta único y satisfecho con su experiencia.
+              Somos más que barberos: somos artistas de la imagen.
+Con más de 10 años de experiencia, nuestro equipo está formado por profesionales apasionados que dominan tanto las técnicas tradicionales como las más innovadoras del mundo de la barbería.
+Cada corte, cada detalle, está pensado para que vivas una experiencia única, personalizada y con el más alto nivel de calidad.
             </p>
             <div className='max-w-sm d-flex justify-center mx-auto'>
             <ButtonGeneral
