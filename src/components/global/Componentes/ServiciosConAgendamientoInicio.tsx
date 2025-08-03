@@ -7,61 +7,68 @@ import React from 'react'
 const serviciosBarberia = [
   {
     id: 1,
-    titulo: "Corte de cabello",
-    descripcion: "Servicio completo de corte y estilo según tus preferencias, incluye lavado y acabado profesional.",
+    titulo: "Corte de pelo básico",
+    descripcion: "Corte clásico y preciso, adaptado a tu estilo personal. Incluye lavado y acabado profesional para una presentación impecable.",
     duracion: "30 min",
     calificacion: 5.0
   },
   {
     id: 2,
-    titulo: "Arreglo de barba",
-    descripcion: "Perfilado y definición de barba con navaja, incluye productos hidratantes y aceites esenciales.",
-    duracion: "20 min",
+    titulo: "Corte y barba combo",
+    descripcion: "Servicio integral que combina corte de cabello y perfilado de barba. Incluye aplicación de aceites esenciales y toalla caliente para una experiencia relajante.",
+    duracion: "60 min",
     calificacion: 5.0
   },
   {
     id: 3,
-    titulo: "Cejas con navaja",
-    descripcion: "Diseño y perfilado de cejas con precisión utilizando navaja tradicional para un acabado natural.",
-    duracion: "5 min",
+    titulo: "Corte con difuminado",
+    descripcion: "Corte moderno con técnica de degradado (fade) para un acabado limpio y elegante. Ideal para quienes buscan estilo y precisión.",
+    duracion: "45 min",
     calificacion: 5.0
   },
   {
     id: 4,
-    titulo: "Corte + Barba",
-    descripcion: "Combinación de corte de cabello y arreglo de barba completo para una imagen renovada y perfectamente equilibrada.",
+    titulo: "Corte de barba",
+    descripcion: "Diseño y recorte detallado de barba, con perfilado a navaja y productos hidratantes para realzar tu estilo con distinción.",
     duracion: "45 min",
     calificacion: 5.0
   },
   {
     id: 5,
-    titulo: "Corte + Cejas",
-    descripcion: "Servicio que incluye corte de cabello personalizado y diseño de cejas para una apariencia armónica.",
+    titulo: "Corte niño",
+    descripcion: "Corte especializado para niños, cómodo y personalizado, ideal para resaltar su estilo con un toque moderno y fresco.",
     duracion: "40 min",
     calificacion: 5.0
   },
   {
     id: 6,
-    titulo: "Corte + Barba + Cejas",
-    descripcion: "Paquete completo que incluye corte de cabello, arreglo de barba y perfilado de cejas para un cambio integral.",
-    duracion: "50 min",
+    titulo: "Cerquillo",
+    descripcion: "Definición precisa del contorno frontal del cabello. Perfecto para mantener tu estilo impecable entre cortes.",
+    duracion: "15 min",
     calificacion: 5.0
   },
   {
     id: 7,
-    titulo: "Colorimetría",
-    descripcion: "Servicio especializado de aplicación de color o decoloración con productos premium para lograr el tono deseado.",
-    duracion: "90 min",
+    titulo: "Cejas",
+    descripcion: "Diseño y perfilado de cejas con navaja para un acabado limpio, natural y armonioso con tu rostro.",
+    duracion: "20 min",
     calificacion: 5.0
   },
   {
     id: 8,
-    titulo: "Delineado",
-    descripcion: "Perfilado preciso de líneas y contornos con máquina o navaja para definir y mejorar el estilo de tu corte.",
+    titulo: "Línea",
+    descripcion: "Marcación y diseño de líneas en el corte para resaltar tu estilo con detalles definidos y modernos.",
+    duracion: "10 min",
+    calificacion: 5.0
+  },
+  {
+    id: 9,
+    titulo: "Retoque degradado",
+    descripcion: "Ajuste del degradado para mantener el corte fresco, limpio y bien definido sin necesidad de un corte completo.",
     duracion: "10 min",
     calificacion: 5.0
   }
-]
+];
 
 const ServiciosConAgendamientoInicio = () => {
     return (
