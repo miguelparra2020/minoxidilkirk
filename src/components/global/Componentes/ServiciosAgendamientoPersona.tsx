@@ -8,8 +8,8 @@ import './toast-custom.css' // Importamos los estilos personalizados para toast
 import { Persona as PersonaAgendamiento, seleccionarPersona, servicioAgendadoStore } from "../../../stores/ServicesScheduling"
 import { useStore } from "@nanostores/react"
 import { ServicioAgendadoInfo } from "@globals"
-import BarberoOscar from "@img/profesionales/BarberoOscar.jpg"
-import BarberoDaniel from "@img/profesionales/BarberoDaniel.jpg"
+import BarberoCarlos from "@img/TeamWork/Barbero1.jpg"
+import BarberoElkin from "@img/TeamWork/Barbero2.jpg"
 
 interface Persona {
   id: string
@@ -66,11 +66,11 @@ type CargoFiltro = 'todos' | 'barbero'
 const personas: Persona[] = [
   {
     id: '1',
-    nombre: 'Oscar Rodríguez',
+    nombre: 'Carlos',
     cargo: 'barbero',
-    descripcion: 'Especialista en cortes clásicos y degradados con 16 años de experiencia',
+    descripcion: 'Especialista en cortes clásicos y degradados con 8 años de experiencia',
     destacado: true,
-    imagen: BarberoOscar,
+    imagen: BarberoCarlos,
     dayNotWork: 'domingo',
     
     // Franjas horarias generales
@@ -111,15 +111,15 @@ const personas: Persona[] = [
     atNight10pm11pm: false,
     atNight11pm12am: false,
 
-    calendarId: "8c7ab21ba8a0d96b02f493d0b58abaa286f9af12db4366f4356baf8ad30d208f@group.calendar.google.com",
+    calendarId: "3536f33409062b5cb7bacccba0349de72b4411bb4a809cf66c5f539631f8f14f@group.calendar.google.com",
   },
   {
     id: '2',
-    nombre: 'Daniel S. Cano',
+    nombre: 'Elkin',
     cargo: 'barbero',
-    descripcion: 'Especialista en cortes clásicos y degradados con 8 años de experiencia',
+    descripcion: 'Especialista en cortes clásicos y degradados con 10 años de experiencia',
     destacado: true,
-    imagen: BarberoDaniel,
+    imagen: BarberoElkin,
     dayNotWork: 'domingo',
     
     // Franjas horarias generales
@@ -160,7 +160,7 @@ const personas: Persona[] = [
     atNight10pm11pm: false,
     atNight11pm12am: false,
 
-    calendarId: "5d9a781b707c3da4ea852b317eb62c6204f1eb538e0dbb4bec0bb2de7d650a1c@group.calendar.google.com",
+    calendarId: "843e9db1f7669992f23251193a67ace89fc053dad365eb20278a5fa218d3a378@group.calendar.google.com",
   }
 ]
 
