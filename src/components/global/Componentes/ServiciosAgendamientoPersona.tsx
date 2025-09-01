@@ -10,6 +10,9 @@ import { useStore } from "@nanostores/react"
 import { ServicioAgendadoInfo } from "@globals"
 import BarberoCarlos from "@img/TeamWork/Barbero1.jpg"
 import BarberoElkin from "@img/TeamWork/Barbero2.jpg"
+import BarberoAndres from "@img/TeamWork/Barbero3.jpg"
+import BarberoAlex from "@img/TeamWork/Barbero4.jpg"
+import BarberoSebas from "@img/TeamWork/Barbero5.jpg"
 
 interface Persona {
   id: string
@@ -161,6 +164,153 @@ const personas: Persona[] = [
     atNight11pm12am: false,
 
     calendarId: "843e9db1f7669992f23251193a67ace89fc053dad365eb20278a5fa218d3a378@group.calendar.google.com",
+  },
+  {
+    id: '3',
+    nombre: 'Andres',
+    cargo: 'barbero',
+    descripcion: 'Especialista en cortes clásicos y degradados con 10 años de experiencia',
+    destacado: true,
+    imagen: BarberoAndres,
+    dayNotWork: 'domingo',
+    
+    // Franjas horarias generales
+    earlyMorning: false,
+    inTheMorning: true,
+    inTheAfternoon: true,
+    atNight: true,
+    
+    // Horarios detallados - Madrugada (no trabaja)
+    earlyMorning12am1am: false,
+    earlyMorning1am2am: false,
+    earlyMorning2am3am: false,
+    earlyMorning3am4am: false,
+    earlyMorning4am5am: false,
+    earlyMorning5am6am: false,
+    
+    // Horarios detallados - Mañana (7am a 12pm)
+    inTheMorning6am7am: false,
+    inTheMorning7am8am: false,
+    inTheMorning8am9am: false,
+    inTheMorning9am10am: false,
+    inTheMorning10am11am: true,
+    inTheMorning11am12pm: true,
+    
+    // Horarios detallados - Tarde (excepto de 2pm a 3pm)
+    inTheAfternoon12pm1pm: true,
+    inTheAfternoon1pm2pm: true,
+    inTheAfternoon2pm3pm: false, // Hora de almuerzo
+    inTheAfternoon3pm4pm: false,
+    inTheAfternoon4pm5pm: true,
+    inTheAfternoon5pm6pm: true,
+    
+    // Horarios detallados - Noche (hasta las 10pm)
+    atNight6pm7pm: true,
+    atNight7pm8pm: true,
+    atNight8pm9pm: true,
+    atNight9pm10pm: false,
+    atNight10pm11pm: false,
+    atNight11pm12am: false,
+
+    calendarId: "58810e15f0aa93b9446e012f26af869722816bb652aa8cd82f3d807f3a7dd5aa@group.calendar.google.com",
+  },
+  {
+    id: '4',
+    nombre: 'Alex',
+    cargo: 'barbero',
+    descripcion: 'Especialista en cortes clásicos y degradados con 10 años de experiencia',
+    destacado: true,
+    imagen: BarberoAlex,
+    dayNotWork: 'domingo',
+    
+    // Franjas horarias generales
+    earlyMorning: false,
+    inTheMorning: true,
+    inTheAfternoon: true,
+    atNight: true,
+    
+    // Horarios detallados - Madrugada (no trabaja)
+    earlyMorning12am1am: false,
+    earlyMorning1am2am: false,
+    earlyMorning2am3am: false,
+    earlyMorning3am4am: false,
+    earlyMorning4am5am: false,
+    earlyMorning5am6am: false,
+    
+    // Horarios detallados - Mañana (7am a 12pm)
+    inTheMorning6am7am: false,
+    inTheMorning7am8am: false,
+    inTheMorning8am9am: false,
+    inTheMorning9am10am: false,
+    inTheMorning10am11am: true,
+    inTheMorning11am12pm: true,
+    
+    // Horarios detallados - Tarde (excepto de 2pm a 3pm)
+    inTheAfternoon12pm1pm: true,
+    inTheAfternoon1pm2pm: true,
+    inTheAfternoon2pm3pm: false, // Hora de almuerzo
+    inTheAfternoon3pm4pm: false,
+    inTheAfternoon4pm5pm: true,
+    inTheAfternoon5pm6pm: true,
+    
+    // Horarios detallados - Noche (hasta las 10pm)
+    atNight6pm7pm: true,
+    atNight7pm8pm: true,
+    atNight8pm9pm: true,
+    atNight9pm10pm: false,
+    atNight10pm11pm: false,
+    atNight11pm12am: false,
+
+    calendarId: "fdc4409088c4d0760f29cd32c2d3a4a3e2186d44b6926e7775e74f3bd5cabd78@group.calendar.google.com",
+  },
+  {
+    id: '5',
+    nombre: 'Sebas',
+    cargo: 'barbero',
+    descripcion: 'Especialista en cortes clásicos y degradados con 8 años de experiencia',
+    destacado: true,
+    imagen: BarberoSebas,
+    dayNotWork: 'domingo',
+    
+    // Franjas horarias generales
+    earlyMorning: false,
+    inTheMorning: true,
+    inTheAfternoon: true,
+    atNight: true,
+    
+    // Horarios detallados - Madrugada (no trabaja)
+    earlyMorning12am1am: false,
+    earlyMorning1am2am: false,
+    earlyMorning2am3am: false,
+    earlyMorning3am4am: false,
+    earlyMorning4am5am: false,
+    earlyMorning5am6am: false,
+    
+    // Horarios detallados - Mañana (7am a 12pm)
+    inTheMorning6am7am: false,
+    inTheMorning7am8am: false,
+    inTheMorning8am9am: false,
+    inTheMorning9am10am: false,
+    inTheMorning10am11am: true,
+    inTheMorning11am12pm: true,
+    
+    // Horarios detallados - Tarde (excepto de 2pm a 3pm)
+    inTheAfternoon12pm1pm: true,
+    inTheAfternoon1pm2pm: true,
+    inTheAfternoon2pm3pm: false, // Hora de almuerzo
+    inTheAfternoon3pm4pm: false,
+    inTheAfternoon4pm5pm: true,
+    inTheAfternoon5pm6pm: true,
+    
+    // Horarios detallados - Noche (hasta las 10pm)
+    atNight6pm7pm: true,
+    atNight7pm8pm: true,
+    atNight8pm9pm: true,
+    atNight9pm10pm: false,
+    atNight10pm11pm: false,
+    atNight11pm12am: false,
+
+    calendarId: "36fb159acc4e0b70eb8f6bb199d50d8579a0ab8bf1b635e0c14e0e05403cc0f1@group.calendar.google.com",
   }
 ]
 
