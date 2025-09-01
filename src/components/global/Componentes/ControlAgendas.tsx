@@ -77,6 +77,17 @@ const ControlAgendas = () => {
   const [selectedCalendars, setSelectedCalendars] = useState<string[]>(CALENDAR_IDS.map(cal => cal.id))
   // Estado para controlar la pestaña activa
   const [activeTab, setActiveTab] = useState<'edicion' | 'resumen'>('edicion')
+  // Estado para el calendario seleccionado en el modo resumen
+  const [selectedCalendarId, setSelectedCalendarId] = useState<string>(CALENDAR_IDS[0]?.id || '')
+  
+  // Configuración de iframes para cada calendario
+  const calendarIframes = {
+    [CALENDAR_IDS[0]?.id]: 'https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe/Madrid&showPrint=0&mode=AGENDA&src=MzUzNmYzMzQwOTA2MmI1Y2I3YmFjY2NiYTAzNDlkZTcyYjQ0MTFiYjRhODA5Y2Y2NmM1ZjUzOTYzMWY4ZjE0ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300',
+    [CALENDAR_IDS[1]?.id]: 'https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe/Madrid&showPrint=0&mode=AGENDA&src=ODQzZTlkYjFmNzY2OTk5MmYyMzI1MTE5M2E2N2FjZTg5ZmMwNTNkYWQzNjVlYjIwMjc4YTVmYTIxOGQzYTM3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238e24aa',
+    [CALENDAR_IDS[2]?.id]: 'https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe/Madrid&showPrint=0&mode=AGENDA&src=NTg4MTBlMTVmMGFhOTNiOTQ0NmUwMTJmMjZhZjg2OTcyMjgxNmJiNjUyYWE4Y2Q4MmYzZDgwN2YzYTdkZDVhYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161',
+    [CALENDAR_IDS[3]?.id]: 'https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe/Madrid&showPrint=0&mode=AGENDA&src=ZmRjNDQwOTA4OGM0ZDA3NjBmMjljZDMyYzJkM2E0YTNlMjE4NmQ0NGI2OTI2ZTc3NzVlNzRmM2JkNWNhYmQ3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23e4c441',
+    [CALENDAR_IDS[4]?.id]: 'https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe/Madrid&showPrint=0&mode=AGENDA&src=MzZmYjE1OWFjYzRlMGI3MGViOGY2YmIxOTlkNTBkODU3OWEwYWI4YmYxYjYzNWUwYzE0ZTBlMDU0MDNjYzBmMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5'
+  }
 
   // Cargar usuario de localStorage
   useEffect(() => {
@@ -598,7 +609,43 @@ const ControlAgendas = () => {
       </>
       )
       :
-      <></>
+      <div className="space-y-4">
+        <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+          <h3 className="text-lg font-medium text-gray-900 mb-4">Vista de Calendario</h3>
+          
+          {/* Selector de calendario */}
+          <div className="mb-4">
+            <label htmlFor="calendar-select" className="block text-sm font-medium text-gray-700 mb-2">
+              Seleccionar Calendario:
+            </label>
+            <select
+              id="calendar-select"
+              value={selectedCalendarId}
+              onChange={(e) => setSelectedCalendarId(e.target.value)}
+              className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
+            >
+              {CALENDAR_IDS.map(calendar => (
+                <option key={calendar.id} value={calendar.id}>
+                  {calendar.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          
+          {/* Iframe del calendario */}
+          <div className="mt-4 rounded-lg overflow-hidden">
+            <iframe
+              src={calendarIframes[selectedCalendarId]}
+              style={{ border: 'solid 1px #777' }}
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              title="Vista de Calendario"
+            ></iframe>
+          </div>
+        </div>
+      </div>
       }
       </div>
   )
