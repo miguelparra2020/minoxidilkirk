@@ -39,10 +39,25 @@ type CalendarResponse = {
 
 // Definir los IDs de calendario disponibles
 const CALENDAR_IDS = [
-  { id: "8c7ab21ba8a0d96b02f493d0b58abaa286f9af12db4366f4356baf8ad30d208f@group.calendar.google.com", name: "Agenda con Oscar Rodriguez" },
   {
-    id: "5d9a781b707c3da4ea852b317eb62c6204f1eb538e0dbb4bec0bb2de7d650a1c@group.calendar.google.com",
-    name: "Agenda con Daniel Cano"
+    id: "3536f33409062b5cb7bacccba0349de72b4411bb4a809cf66c5f539631f8f14f@group.calendar.google.com",
+    name: "Agenda con Carlos"
+  },
+  {
+    id: "843e9db1f7669992f23251193a67ace89fc053dad365eb20278a5fa218d3a378@group.calendar.google.com",
+    name: "Agenda con Elkin"
+  },
+  {
+    id: "58810e15f0aa93b9446e012f26af869722816bb652aa8cd82f3d807f3a7dd5aa@group.calendar.google.com",
+    name: "Agenda con Andres"
+  },
+  {
+    id: "fdc4409088c4d0760f29cd32c2d3a4a3e2186d44b6926e7775e74f3bd5cabd78@group.calendar.google.com",
+    name: "Agenda con Alex"
+  },
+  {
+    id: "36fb159acc4e0b70eb8f6bb199d50d8579a0ab8bf1b635e0c14e0e05403cc0f1@group.calendar.google.com",
+    name: "Agenda con Sebas"
   }
 ]
 
