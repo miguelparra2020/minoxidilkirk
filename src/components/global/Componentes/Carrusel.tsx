@@ -39,7 +39,7 @@ const Carrusel = () => {
           description: "Un corte atemporal que nunca pasa de moda. Perfecto para el hombre moderno que busca elegancia.",
           image: Img4,
           price: "$25",
-          rating: 4.9,
+          rating: 5.0,
           popular: true,
         },
         {
@@ -48,7 +48,7 @@ const Carrusel = () => {
           description: "Estilo contemporáneo con contraste marcado. Ideal para destacar tu personalidad única.",
           image: Img3,
           price: "$30",
-          rating: 4.8,
+          rating: 5.0,
           popular: false,
         },
         {
@@ -66,7 +66,7 @@ const Carrusel = () => {
           description: "Corte militar refinado y práctico. Perfecto para el ejecutivo que valora la simplicidad.",
           image: Img2,
           price: "$20",
-          rating: 4.7,
+          rating: 5.0,
           popular: false,
         },
       ]
