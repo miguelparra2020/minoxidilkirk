@@ -75,6 +75,8 @@ const ControlAgendas = () => {
   const [deleteError, setDeleteError] = useState<string | null>(null)
   // Estado para los calendarios seleccionados
   const [selectedCalendars, setSelectedCalendars] = useState<string[]>(CALENDAR_IDS.map(cal => cal.id))
+  // Estado para controlar la pestaña activa
+  const [activeTab, setActiveTab] = useState<'edicion' | 'resumen'>('edicion')
 
   // Cargar usuario de localStorage
   useEffect(() => {
@@ -218,8 +220,8 @@ const ControlAgendas = () => {
   const extractTimeOnly = (isoString: string) => {
     if (!isoString) return ''
     // Buscar la parte entre la T y el +
-    const matches = isoString.match(/T([^+]+)/)
-    return matches && matches[1] ? matches[1] : ''
+    const timeMatch = isoString.match(/T([^+]+)/)
+    return timeMatch && timeMatch[1] ? timeMatch[1] : ''
   }
   
   // Manejar la eliminación de un evento
@@ -413,9 +415,31 @@ const ControlAgendas = () => {
           {eventCount} {eventCount === 1 ? 'cita' : 'citas'}
         </span>
       </div>
+
+      {/* Pestañas */}
+      <div className="border-b border-gray-200 mb-6">
+        <nav className="-mb-px flex space-x-8">
+          <button
+            onClick={() => setActiveTab('edicion')}
+            className={`${activeTab === 'edicion' ? 'border-primary-500 text-primary-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
+          >
+            Modo Edición
+          </button>
+          <button
+            onClick={() => setActiveTab('resumen')}
+            className={`${activeTab === 'resumen' ? 'border-primary-500 text-primary-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'} whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm`}
+          >
+            Modo Resumen
+          </button>
+        </nav>
+      </div>
       
-      {/* Filtros */}
-      <div className="mb-4 space-y-4">
+      {/* Contenido de las pestañas */}
+      {activeTab === 'edicion' ? 
+      (
+      <>
+          {/* Filtros */}
+          <div className="mb-4 space-y-4">
         {/* Filtro de calendarios */}
         <div className="bg-white rounded-lg px-4 py-3 border border-gray-200">
           <h3 className="font-medium text-gray-700 mb-2">Filtrar por calendario:</h3>
@@ -563,16 +587,20 @@ const ControlAgendas = () => {
               </div>
             )
           })}
-        </div>
-      )}
+          </div>
+      ) }
       
-      {isFetchingNextPage && (
+      {activeTab === 'edicion' && isFetchingNextPage && (
         <div className="text-center p-2">
           <span className="text-sm text-gray-500">Cargando más calendarios...</span>
         </div>
       )}
-    </div>
+      </>
+      )
+      :
+      <></>
+      }
+      </div>
   )
 }
-
 export default ControlAgendas
