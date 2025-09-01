@@ -1748,7 +1748,7 @@ export const generalConfig = {
       ParagrathGeneralClass:"text-lg mb-2",
   },  
   GoogleAuth: {
-    clientId: '389059903936-crh2qopn8c163qlk9ucfspglb6uep88o.apps.googleusercontent.com'
+    clientId: '162106336758-ivip4mria2vu9aabun4fn7oacu17k9te.apps.googleusercontent.com'
   },
 }
 
