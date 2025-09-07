@@ -1,5 +1,6 @@
 import React from 'react'
 import { generalConfig } from "@util/generalConfig"
+import ImagenCompanyWebp from '@img/logoCompany.webp'
 const CardRedesSociales = () => {
     const {
         classCardContent,
@@ -16,7 +17,7 @@ const CardRedesSociales = () => {
         <div className={classCardContent}>
           <div className="flex flex-col items-center text-center">
             {/* Company logo */}
-            <div
+            {/* <div
               className={`w-24 h-24 rounded-full bg-gradient-to-br from-${gradientFrom} via-${gradientVia} to-${gradientTo} flex items-center justify-center mb-6 shadow-lg shadow-${shadowColor}`}
             >
               <div
@@ -24,6 +25,9 @@ const CardRedesSociales = () => {
           >
                 {textInicialesLogo}
               </div>
+            </div> */}
+            <div>
+      <img src={ImagenCompanyWebp} alt="Logo Company" className="w-20 h-20 object-contain mb-4 rounded-full " />
             </div>
 
       {/* Company name */}
