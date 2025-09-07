@@ -36,16 +36,16 @@ function IntroCompany() {
         loadingStartTimeRef.current = Date.now()
         const progressInterval = setInterval(() => {
           setLoadingProgress((prevProgress) => {
-            const newProgress = prevProgress + 2            
+            const newProgress = prevProgress + 5           
             if (newProgress >= 100) {
               clearInterval(progressInterval)
-              setTimeout(() => setIsLoaded(true), 500)
-              setTimeout(() => setVisible(false), 1000)
+              setTimeout(() => setIsLoaded(true), 300)
+              setTimeout(() => setVisible(false), 600)
               return 100
             }            
             return newProgress
           })
-        }, 100)
+        }, 70)
       }
     } catch (error) {
       console.error('IntroCompany: Error con localStorage', error)
