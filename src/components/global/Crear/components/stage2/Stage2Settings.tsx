@@ -144,7 +144,7 @@ const Stage2Settings = () => {
       name: "Gradiente Dorado",
       value: "gradient-gold",
       isGradient: true,
-      gradientClass: "bg-gradient-to-r from-yellow-600 via-yellow-700 to-yellow-800",
+      gradientClass: "bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800",
     },
     {
       name: "Gradiente Red",
@@ -165,10 +165,10 @@ const Stage2Settings = () => {
       gradientClass: "bg-gradient-to-r from-amber-400 via-amber-600 to-amber-800",
     },
     {
-      name: "Gradiente Yellow",
-      value: "gradient-yellow",
+      name: "Gradiente blue",
+      value: "gradient-blue",
       isGradient: true,
-      gradientClass: "bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-800",
+      gradientClass: "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800",
     },
     {
       name: "Gradiente Lime",
@@ -314,12 +314,12 @@ const Stage2Settings = () => {
     },
     {
       name: "Gradiente Amarillo",
-      value: "gradient-yellow",
+      value: "gradient-blue",
       isGradient: true,
-      gradientClass: "bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600",
-      hoverClass: "hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700",
-      shadowClass: "shadow-lg shadow-yellow-500/50",
-      focusClass: "focus:ring-4 focus:outline-none focus:ring-yellow-300",
+      gradientClass: "bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600",
+      hoverClass: "hover:from-blue-500 hover:via-blue-600 hover:to-blue-700",
+      shadowClass: "shadow-lg shadow-blue-500/50",
+      focusClass: "focus:ring-4 focus:outline-none focus:ring-blue-300",
       textColor: "text-gray-900",
     },
     {
@@ -655,7 +655,7 @@ const Stage2Settings = () => {
       800: "#92400e",
       900: "#78350f",
     },
-    yellow: {
+    blue: {
       50: "#fefce8",
       100: "#fef9c3",
       200: "#fef08a",

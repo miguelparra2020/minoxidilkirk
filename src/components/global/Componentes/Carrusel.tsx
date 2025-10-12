@@ -110,7 +110,7 @@ const Carrusel = () => {
 
                       {/* Popular Badge */}
                       {haircut.popular && (
-                        <div className="absolute top-6 left-6 bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
+                        <div className="absolute top-6 left-6 bg-blue-400 text-slate-900 px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
                           <Star className="h-4 w-4 fill-current" />
                           Popular
                         </div>
@@ -186,7 +186,7 @@ const Carrusel = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "bg-yellow-400 scale-125" : "bg-stone-300 hover:bg-slate-400"
+                index === currentIndex ? "bg-blue-400 scale-125" : "bg-stone-300 hover:bg-slate-400"
               }`}
             />
           ))}

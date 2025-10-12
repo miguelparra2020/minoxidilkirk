@@ -225,7 +225,7 @@ const SedesSeleccion = () => {
                   </div>
                   {sede.destacada && (
                     <div className="ml-auto">
-                      <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                      <Star className="w-5 h-5 fill-blue-400 text-blue-400" />
                     </div>
                   )}
                 </div>

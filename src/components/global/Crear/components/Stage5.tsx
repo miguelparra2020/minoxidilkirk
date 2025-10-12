@@ -79,7 +79,7 @@ const iconOptions = [
     { name: "Red", value: "red" },
     { name: "Orange", value: "orange" },
     { name: "Amber", value: "amber" },
-    { name: "Yellow", value: "yellow" },
+    { name: "blue", value: "blue" },
     { name: "Lime", value: "lime" },
     { name: "Green", value: "green" },
     { name: "Emerald", value: "emerald" },

@@ -143,7 +143,7 @@ const ServiciosAgendamientoFecha = () => {
         periodEnd = `${year}-${month}-${day}T23:59:59.999Z`
       }
       
-      const url = `https://backend-mat.vercel.app/api/calendar/events?calendarId=${encodeURIComponent(calendarId)}&periodStart=${periodStart}&periodEnd=${periodEnd}`
+      const url = `https://backend-Minoxidil Kirkland.vercel.app/api/calendar/events?calendarId=${encodeURIComponent(calendarId)}&periodStart=${periodStart}&periodEnd=${periodEnd}`
 
       const response = await axios.get(url)
       

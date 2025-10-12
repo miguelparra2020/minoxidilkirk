@@ -69,19 +69,19 @@ function ServiceCard({
           alt={name}
           className="h-48 w-full object-cover"
         />
-        {isPopular && <Badge className={`absolute right-2 top-2 bg-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgColorTagPopular || 'yellow'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgShadeTagPopular || '500'} text-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textColorTagPopular || 'white'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textShadeTagPopular || '500'}`}>Popular</Badge>}
+        {isPopular && <Badge className={`absolute right-2 top-2 bg-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgColorTagPopular || 'blue'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgShadeTagPopular || '500'} text-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textColorTagPopular || 'white'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textShadeTagPopular || '500'}`}>Popular</Badge>}
       </div>
 
       <CardHeader className="pb-2">
         <div className="flex justify-between items-start">
           <div>
-            <Badge variant="outline" className={`mb-2 bg-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgColorTagBarber || 'yellow'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgShadeTagBarber || '500'} text-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textColorTagBarber || 'white'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textShadeTagBarber || '500'}`}>
+            <Badge variant="outline" className={`mb-2 bg-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgColorTagBarber || 'blue'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.bgShadeTagBarber || '500'} text-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textColorTagBarber || 'white'}-${store.infoStage4.businessCategories?.[1]?.cardSearchInCategory2?.textShadeTagBarber || '500'}`}>
               {category}
             </Badge>
             <h3 className="text-xl font-bold">{name}</h3>
           </div>
           <div className="flex items-center gap-1">
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <Star className="h-4 w-4 fill-blue-400 text-blue-400" />
             <span className="text-sm font-medium">{rating}</span>
           </div>
         </div>
@@ -125,7 +125,7 @@ export const RenderCardSearchInCategory2 = ({ setCurrentStep, handlePrev }:
           red: '#ef4444',
           orange: '#f97316',
           amber: '#f59e0b',
-          yellow: '#eab308',
+          blue: '#eab308',
           lime: '#84cc16',
           green: '#22c55e',
           emerald: '#10b981',
@@ -408,7 +408,7 @@ export const RenderCardSearchInCategory2 = ({ setCurrentStep, handlePrev }:
                                         <ColorSelectItem color="red" label="Rojo" />
                                         <ColorSelectItem color="orange" label="Naranja" />
                                         <ColorSelectItem color="amber" label="Ámbar" />
-                                        <ColorSelectItem color="yellow" label="Amarillo" />
+                                        <ColorSelectItem color="blue" label="Amarillo" />
                                         <ColorSelectItem color="lime" label="Lima" />
                                         <ColorSelectItem color="green" label="Verde" />
                                         <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -473,7 +473,7 @@ export const RenderCardSearchInCategory2 = ({ setCurrentStep, handlePrev }:
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -533,7 +533,7 @@ export const RenderCardSearchInCategory2 = ({ setCurrentStep, handlePrev }:
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -597,7 +597,7 @@ export const RenderCardSearchInCategory2 = ({ setCurrentStep, handlePrev }:
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -657,7 +657,7 @@ export const RenderCardSearchInCategory2 = ({ setCurrentStep, handlePrev }:
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />

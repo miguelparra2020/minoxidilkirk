@@ -728,7 +728,7 @@ const generateTimeSlots = (duracionServicio: number = 30): TimeSlot[] => {
           <TimeSection
             title="Mañana"
             slots={filteredTimeSlots.morning}
-            icon={<div className="w-3 h-3 rounded-full bg-yellow-400" />}
+            icon={<div className="w-3 h-3 rounded-full bg-blue-400" />}
           />
         )}
 

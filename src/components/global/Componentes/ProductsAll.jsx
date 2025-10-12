@@ -142,7 +142,7 @@ const ProductsAll = () => {
                     {ratings.map((rating, index) => (
                             <svg
                             key={index}
-                            className={`w-4 h-4 ${rating <= 4 ? "text-yellow-300" : "text-gray-200 "}`}
+                            className={`w-4 h-4 ${rating <= 4 ? "text-blue-300" : "text-gray-200 "}`}
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"

@@ -35,10 +35,10 @@ export const ModuelesActives = {
 }
 
 export const company = {
-  name: "MAT",
+  name: "Minoxidil Kirkland",
   principalColorTitles: "blue",
   principalColorParrafos: "slate",
-  principalColorButtonsBg: "yellow",
+  principalColorButtonsBg: "blue",
   principalColorButtonsText: "white",
 }
 
@@ -277,7 +277,7 @@ export const INTRO_CONFIG = {
     count: 400, 
   },
   BRAND: {
-    name: "MAT",
+    name: "Minoxidil Kirkland",
     tagline: "Donde cada detalle cuenta",
   },
   LOADING: {
@@ -805,7 +805,7 @@ export  const getTranslationCreateProject = (languajeChoose: string, key: string
 export const generalConfig = {
   idioma: "/es/",
   name: company.name,
-  classTitlesGeneral: "text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-200 to-slate-800 font-roboto font-extrabold text-4xl",
+  classTitlesGeneral: "text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-200 to-slate-800 font-roboto font-extrabold text-4xl",
   classParagraphGeneral:"text-stone-500 font-poppins font-normal text-base",
   NavBar: {
     nameCompany: company.name,
@@ -814,7 +814,7 @@ export const generalConfig = {
     logoCompanyWebp: ImagenCompanyWebp,
     logoCompanyJpg: ImagenCompanyJpg,
     logoCompanyPng: ImagenCompanyPng,
-    classLinksHome: "text-yellow-900 font-open-sans font-extrabold text-lg",
+    classLinksHome: "text-blue-900 font-open-sans font-extrabold text-lg",
     classLinksAll: "flex flex-row items-center justify-center gap-2 py-2 px-3 md:p-0 text-stone-600 font-open-sans font-semibold hover:bg-zinc-100 text-base",
     linksPages: [
       { href: "/descargar", id:"downloadApp", text: getTranslation("/es/","downloadApp"), 
@@ -1068,7 +1068,7 @@ export const generalConfig = {
       ImagenMedianaJpg: ImagenMedianaJpg,
       ButtonGeneralAs: "a",
       ButtonGeneralHref: "/servicios",
-      ButtonGeneralClass: "flex flex-row gap-2 justify-center items-center px-4 py-2 text-white rounded-lg bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-800 shadow-lg shadow-yellow-700/50 font-roboto font-bold text-lg transition-all duration-200 border border-stone-400 hover:bg-green-300 hover:shadow-xl",
+      ButtonGeneralClass: "flex flex-row gap-2 justify-center items-center px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 shadow-lg shadow-blue-700/50 font-roboto font-bold text-lg transition-all duration-200 border border-stone-400 hover:bg-green-300 hover:shadow-xl",
       ButtonGeneralName: "Agendar cita",
       ButtonGeneralIconActive: true,
     },
@@ -1077,11 +1077,11 @@ export const generalConfig = {
       colorBgSesion: "black1", // Color de fondoMAT
       urlImgBgSesion: "",
       heighMinSesion: "90",
-      classCardContent: "relative z-10 backdrop-blur-sm bg-black/40 border border-yellow-800 rounded-2xl p-8 shadow-xl", 
+      classCardContent: "relative z-10 backdrop-blur-sm bg-black/40 border border-blue-800 rounded-2xl p-8 shadow-xl", 
       classTextInicialesLogo: "bg-black/80 text-white text-3xl",
-      textInicialesLogo: "MAT",
+      textInicialesLogo: "Minoxidil Kirkland",
       gradientFrom: "slate-500",
-      gradientVia: "yellow-500",
+      gradientVia: "blue-500",
       gradientTo: "stone-500",
       shadowColor: "amber-500/20",
       innerBg: "black/80",
@@ -1743,7 +1743,7 @@ export const generalConfig = {
       },
   },
   GeneralSettings: {
-      ButtonGeneralClass:"bg-yellow-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+      ButtonGeneralClass:"bg-blue-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
       TitleGeneralClass:"text-2xl font-bold mb-4",
       ParagrathGeneralClass:"text-lg mb-2",
   },  

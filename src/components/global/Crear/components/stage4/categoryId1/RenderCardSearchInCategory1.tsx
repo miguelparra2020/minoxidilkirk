@@ -95,7 +95,7 @@ function ProductCard({
         <div className={`mb-1 text-sm text-${store.infoStage4.categorySelectToEdit?.cardSearchInCategory1?.textColorCategory || 'zinc'}-${store.infoStage4.categorySelectToEdit?.cardSearchInCategory1?.textShadeCategory || '500'} ${store.infoStage2?.paragraphFont || store.infoStage4.categorySelectToEdit?.cardSearchInCategory1?.fontCategory || 'font-normal'}`}>{category}</div>
         <h3 className={`mb-2 leading-tight text-${store.infoStage4.categorySelectToEdit?.cardSearchInCategory1?.textColorProductName || 'zinc'}-${store.infoStage4.categorySelectToEdit?.cardSearchInCategory1?.textShadeProductName || '900'} ${store.infoStage2?.titleFont || store.infoStage4.categorySelectToEdit?.cardSearchInCategory1?.fontProductName || 'font-semibold text-lg'}`}>{name}</h3>
         <div className="flex items-center gap-1 mb-1">
-          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          <Star className="h-4 w-4 fill-blue-400 text-blue-400" />
           <span className="text-sm font-medium">{rating}</span>
         </div>
       </CardContent>
@@ -124,7 +124,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
         red: '#ef4444',
         orange: '#f97316',
         amber: '#f59e0b',
-        yellow: '#eab308',
+        blue: '#eab308',
         lime: '#84cc16',
         green: '#22c55e',
         emerald: '#10b981',
@@ -474,7 +474,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                     <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -539,7 +539,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -599,7 +599,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -664,7 +664,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -724,7 +724,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -789,7 +789,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -849,7 +849,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -914,7 +914,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -974,7 +974,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -1039,7 +1039,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -1129,7 +1129,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -1224,7 +1224,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />
@@ -1280,7 +1280,7 @@ export const RenderCardSearchInCategory1 = ({ setCurrentStep }: RenderInitialQue
                                             <ColorSelectItem color="red" label="Rojo" />
                                             <ColorSelectItem color="orange" label="Naranja" />
                                             <ColorSelectItem color="amber" label="Ámbar" />
-                                            <ColorSelectItem color="yellow" label="Amarillo" />
+                                            <ColorSelectItem color="blue" label="Amarillo" />
                                             <ColorSelectItem color="lime" label="Lima" />
                                             <ColorSelectItem color="green" label="Verde" />
                                             <ColorSelectItem color="emerald" label="Esmeralda" />

@@ -2,7 +2,7 @@ export const colorOptionsTitles = [
     { name: "Red", value: "red", titleShade: 700, paragraphShade: 600 },
     { name: "Orange", value: "orange", titleShade: 700, paragraphShade: 600 },
     { name: "Amber", value: "amber", titleShade: 700, paragraphShade: 600 },
-    { name: "Yellow", value: "yellow", titleShade: 700, paragraphShade: 600 },
+    { name: "blue", value: "blue", titleShade: 700, paragraphShade: 600 },
     { name: "Lime", value: "lime", titleShade: 700, paragraphShade: 600 },
     { name: "Green", value: "green", titleShade: 800, paragraphShade: 600 },
     { name: "Emerald", value: "emerald", titleShade: 900, paragraphShade: 600 },

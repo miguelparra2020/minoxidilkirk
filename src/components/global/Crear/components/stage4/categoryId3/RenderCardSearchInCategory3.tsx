@@ -36,7 +36,7 @@ function ServiceCard({
           alt={name}
           className="h-48 w-full object-cover"
         />
-        {isPopular && <Badge className="absolute right-2 top-2 bg-yellow-500 hover:bg-yellow-600">Popular</Badge>}
+        {isPopular && <Badge className="absolute right-2 top-2 bg-blue-500 hover:bg-blue-600">Popular</Badge>}
       </div>
 
       <CardHeader className="pb-2">
@@ -48,7 +48,7 @@ function ServiceCard({
             <h3 className="text-xl font-bold">{name}</h3>
           </div>
           <div className="flex items-center gap-1">
-            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <Star className="h-4 w-4 fill-blue-400 text-blue-400" />
             <span className="text-sm font-medium">{rating}</span>
           </div>
         </div>

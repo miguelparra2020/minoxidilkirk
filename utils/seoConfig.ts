@@ -15,7 +15,7 @@ export const seoConfig = {
 		width: 1200,
 		height: 630
 	},
-	siteName: "MAT", // Change this to your website's name,
+	siteName: "Minoxidil Kirkland", // Change this to your website's name,
 	twitter: {
 		card: "Descripción de la actividad de la compañía"
 	}
