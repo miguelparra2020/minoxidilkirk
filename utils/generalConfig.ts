@@ -116,19 +116,19 @@ export const getTranslation = (languajeChoose: string, key: string): string => {
 
 export const translationHomeWellcome = {
   "/en/": {
-    Wellcome: "Welcome to",
+    Wellcome: "",
     DescriptionWellcome: "Where every detail matters and your style has the final word"
   }, 
   "/es/": {
-    Wellcome: "Bienvenido a",
+    Wellcome: "",
     DescriptionWellcome: "La experiencia premium que transforma tu estilo."
   },
   "/pt/": {
-    Wellcome: "Bem-vindo a",
+    Wellcome: "",
     DescriptionWellcome: "Onde cada detalhe conta e seu estilo tem a palavra final."
   },
   "/fr/": {
-    Wellcome: "Bienvenue à",
+    Wellcome: "",
     DescriptionWellcome: "Où chaque détail compte et votre style a le dernier mot"
   },
 }
