@@ -108,7 +108,7 @@ function ServiceCard({
         <div className="flex w-full gap-2">
           <Button className="w-full bg-zinc-900 hover:bg-zinc-800 text-white flex gap-2 px-4 py-2 rounded-lg">
           <Calendar className="mr-2 h-4 w-4 text-muted-foreground" />
-          Agendar cita</Button>
+          Ver productos</Button>
         </div>
       </CardFooter>
     </Card>

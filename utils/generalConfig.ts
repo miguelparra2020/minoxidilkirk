@@ -35,7 +35,7 @@ export const ModuelesActives = {
 }
 
 export const company = {
-  name: "Minoxidil Kirkland",
+  name: "Minoxidil Kirkland España",
   principalColorTitles: "blue",
   principalColorParrafos: "slate",
   principalColorButtonsBg: "blue",
@@ -1069,7 +1069,7 @@ export const generalConfig = {
       ButtonGeneralAs: "a",
       ButtonGeneralHref: "/servicios",
       ButtonGeneralClass: "flex flex-row gap-2 justify-center items-center px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 shadow-lg shadow-blue-700/50 font-roboto font-bold text-lg transition-all duration-200 border border-stone-400 hover:bg-green-300 hover:shadow-xl",
-      ButtonGeneralName: "Agendar cita",
+      ButtonGeneralName: "Ver productos",
       ButtonGeneralIconActive: true,
     },
     socialRedes:{
