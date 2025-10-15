@@ -1,14 +1,13 @@
 import ImagenCompanyGeneral from '@img/user.png'
-import ImagenCompanyAvif from '@img/logoCompany.avif'
 import ImagenCompanyWebp from '@img/logoCompany.webp'
 import ImagenCompanyJpg from '@img/logoCompany.jpg'
 import ImagenCompanyPng from '@img/logoCompany.png'
-import ImagenGrandeAvif from '@img/inicio/imagen-grande-bienvenida.avif'
-import ImagenGrandeWebp from '@img/inicio/imagen-grande-bienvenida.webp'
-import ImagenGrandeJpg from '@img/inicio/imagen-grande-bienvenida.jpg'
-import ImagenMedianaAvif from '@img/inicio/imagen-mediana-bienvenida.avif'
-import ImagenMedianaWebp from '@img/inicio/imagen-mediana-bienvenida.webp'
-import ImagenMedianaJpg from '@img/inicio/imagen-mediana-bienvenida.jpg'
+import ImagenGrandeAvif from '@img/logoCompany.jpg'
+import ImagenGrandeWebp from '@img/logoCompany.jpg'
+import ImagenGrandeJpg from '@img/logoCompany.jpg'
+import ImagenMedianaAvif from '@img/logoCompany.jpg'
+import ImagenMedianaWebp from '@img/logoCompany.jpg'
+import ImagenMedianaJpg from '@img/logoCompany.jpg'
 import { Scissors } from 'lucide-react'
 // Idioma del proyecto
 type Idioma = "/en/" | "/es/" | "/pt/" | "/fr/"
@@ -810,7 +809,6 @@ export const generalConfig = {
   NavBar: {
     nameCompany: company.name,
     logoCompanyGeneral: ImagenCompanyGeneral,
-    logoCompanyAvif: ImagenCompanyAvif,
     logoCompanyWebp: ImagenCompanyWebp,
     logoCompanyJpg: ImagenCompanyJpg,
     logoCompanyPng: ImagenCompanyPng,

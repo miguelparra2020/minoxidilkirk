@@ -2,10 +2,10 @@ import { ButtonGeneral } from '@globals'
 import { generalConfig } from '@util/generalConfig'
 import { ChevronLeft, ChevronRight, Scissors, Star } from 'lucide-react'
 import  React, { useState, useEffect } from 'react'
-import Img3 from "@img/carrusel/img3.webp"
-import Img4 from "@img/carrusel/img4.webp"
-import Img8 from "@img/carrusel/img8.webp"
-import Img2 from "@img/carrusel/img2.webp"
+import Img3 from "@img/logoCompany.jpg"
+import Img4 from "@img/logoCompany.jpg"
+import Img8 from "@img/logoCompany.jpg"
+import Img2 from "@img/logoCompany.jpg"
 
 const Carrusel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -76,13 +76,16 @@ const Carrusel = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <Scissors className="h-8 w-8 text-stone-600" />
-            <h1 className={generalConfig.classTitlesGeneral}>Cortes en Tendencia</h1>
-            <Scissors className="h-8 w-8 text-stone-600 scale-x-[-1]" />
+            <Scissors className="h-8 w-8 text-blue-600" />
+            <h1 className={generalConfig.classTitlesGeneral}>Beneficios principales</h1>
+            <Scissors className="h-8 w-8 text-blue-600 scale-x-[-1]" />
           </div>
-          <p className={generalConfig.classParagraphGeneral}>
-            Descubre los estilos más populares y modernos. Cada corte es una obra de arte diseñada para realzar tu
-            personalidad.
+          <p className={generalConfig.classParagraphGeneral + "text-justify"}>
+            ✅ Estimula el crecimiento de nuevo cabello. <br />
+✅ Engrosa los folículos capilares debilitados. <br />
+✅ Resultados visibles a partir de 3-4 meses de uso constante. <br />
+✅ Fácil aplicación con gotero incluido. <br />
+✅ Producto original importado. <br />
           </p>
         </div>
 

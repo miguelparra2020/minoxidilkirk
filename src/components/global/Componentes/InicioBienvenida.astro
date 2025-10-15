@@ -4,6 +4,7 @@ import { Sesion, DivVertical, Picture169Grande, ButtonGeneral } from "@globals"
 import { generalConfig } from "@util/generalConfig"
 import TituloInicioBienvenida from "./TituloInicioBienvenida"
 import ParrafoInicioBienvenida from "./ParrafoInicioBienvenida"
+import ImagenCompanyJpg from '@img/logoCompany.jpg'
 ---
 
 {
@@ -15,6 +16,10 @@ import ParrafoInicioBienvenida from "./ParrafoInicioBienvenida"
         heigh={generalConfig.Home.Wellcome.heighMinSesion}
       >
         <DivVertical>
+          <div class:list="rounded-full shadow">
+            <img src={ImagenCompanyJpg} alt="Logo" style="width: 120px; height: 120px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); border-radius: 9999px;" />
+          </div>
+          <br>
           <TituloInicioBienvenida client:idle />
           <br />
           <ParrafoInicioBienvenida client:idle />
@@ -33,3 +38,4 @@ import ParrafoInicioBienvenida from "./ParrafoInicioBienvenida"
     </>
   ):null
 }
+
