@@ -1,86 +1,94 @@
 ---
-import { LayoutGeneral, Footer } from "@globals";
+import { LayoutGeneral } from "@globals";
 
 const siteTitle = "Minoxidil Kirkland España - Tratamiento Anti-Caída | FDA Aprobado";
 const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder contra la caída del cabello. Original, importado desde USA. Resultados visibles desde 3-4 meses.";
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content={siteDescription} />
-<meta name="keywords" content="minoxidil, kirkland, caída cabello, tratamiento, FDA" />
-<meta name="author" content="Minoxidil Kirkland España" />
-<meta property="og:title" content={siteTitle} />
-<meta property="og:description" content={siteDescription} />
-<meta property="og:type" content="website" />
-<meta name="theme-color" content="#1e293b" />
-<title>{siteTitle}</title>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<style>
-  :root {
-    --color-slate-950: #020617;
-    --color-slate-900: #0f172a;
-    --color-slate-800: #1e293b;
-    --color-slate-700: #334155;
-    --color-slate-600: #475569;
-    --color-slate-500: #64748b;
-    --color-slate-400: #94a3b8;
-    --color-stone-50: #fafaf9;
-    --color-blue-600: #2563eb;
-    --color-blue-700: #1d4ed8;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #fafaf9;
-    color: #0f172a;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .fade-in {
-    animation: fadeIn 0.6s ease-in;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(8px);
+<LayoutGeneral>
+  <style>
+    :root {
+      --color-slate-950: #020617;
+      --color-slate-900: #0f172a;
+      --color-slate-800: #1e293b;
+      --color-slate-700: #334155;
+      --color-slate-600: #475569;
+      --color-slate-500: #64748b;
+      --color-slate-400: #94a3b8;
+      --color-stone-50: #fafaf9;
+      --color-blue-600: #2563eb;
+      --color-blue-700: #1d4ed8;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
-  </head>
 
-  <body class="bg-stone-50 text-slate-900">
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #fafaf9;
+      color: #0f172a;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
     <!-- Hero Section -->
-    <section class="px-6 py-20 md:py-32 max-w-6xl mx-auto">
+    <section class="px-6 py-24 max-w-6xl mx-auto">
+      <!-- Título centrado -->
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
+          Minoxidil Kirkland España
+        </h1>
+        
+        <!-- Logo redondo -->
+        <div class="flex justify-center mb-12">
+          <img
+            src="/src/assets/img/logoCompany.webp"
+            alt="Logo Minoxidil Kirkland"
+            class="w-32 h-32 rounded-full shadow-lg border-4 border-blue-600 object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Grid: Imagen izquierda, contenido derecha -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Hero Content -->
+        <!-- Imagen a la izquierda -->
+        <div class="flex justify-center">
+          <img
+            src="https://minoxidilkirk.vercel.app/_astro/img_principal.f00e366e.jpg"
+            alt="Minoxidil Kirkland 5% - Botella de tratamiento"
+            loading="lazy"
+            class="w-full max-w-md h-auto rounded-2xl shadow-xl border border-slate-200"
+          />
+        </div>
+        
+        <!-- Contenido a la derecha -->
         <div class="fade-in">
-          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
-            Minoxidil Kirkland España
-          </h1>
           <p class="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
             Recupera tu confianza con Minoxidil Kirkland 5% – Tratamiento líder contra la caída del cabello, aprobado por la FDA.
           </p>
@@ -108,16 +116,6 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
             ✓ Pago seguro y envío rápido
           </p>
         </div>
-
-        <!-- Hero Image -->
-        <div class="flex justify-center">
-  <img
-    src="https://minoxidilkirk.vercel.app/_astro/img_principal.f00e366e.jpg"
-    alt="Minoxidil Kirkland 5% - Botella de tratamiento"
-    loading="lazy"
-    class="w-full max-w-md h-auto rounded-2xl shadow-xl border border-slate-200"
-  />
-</div>
       </div>
     </section>
 
@@ -175,6 +173,16 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
           Beneficios Principales
         </h2>
+
+        <!-- Imagen debajo del título -->
+        <div class="flex justify-center mb-12">
+          <img
+            src="/src/assets/img/img_principal.jpg"
+            alt="Minoxidil Kirkland - Beneficios"
+            loading="lazy"
+            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+          />
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Benefit 1 -->
@@ -252,6 +260,16 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
           Modo de Uso
         </h2>
+
+        <!-- Imagen debajo del título -->
+        <div class="flex justify-center mb-12">
+          <img
+            src="/src/assets/img/carrusel/img2.webp"
+            alt="Modo de uso Minoxidil Kirkland"
+            loading="lazy"
+            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+          />
+        </div>
 
         <div class="space-y-8">
           <!-- Step 1 -->
@@ -349,6 +367,16 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
           Resultados Esperados
         </h2>
 
+        <!-- Imagen debajo del título -->
+        <div class="flex justify-center mb-12">
+          <img
+            src="/src/assets/img/img_principal.jpg"
+            alt="Resultados Minoxidil Kirkland"
+            loading="lazy"
+            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+          />
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Timeline 3 months -->
           <div class="relative">
@@ -416,6 +444,16 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
           Garantía y Autenticidad
         </h2>
+
+        <!-- Imagen debajo del título -->
+        <div class="flex justify-center mb-12">
+          <img
+            src="/src/assets/img/carrusel/img2.webp"
+            alt="Garantía Minoxidil Kirkland"
+            loading="lazy"
+            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+          />
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Guarantee 1 -->
@@ -533,17 +571,6 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
             </p>
           </details>
 
-          <!-- FAQ 2 -->
-          <details class="group bg-white p-6 rounded-lg shadow-sm cursor-pointer">
-            <summary class="flex justify-between items-center font-semibold text-slate-900 text-lg">
-              ¿Se cae el cabello si dejo de usarlo?
-              <span class="text-2xl group-open:rotate-180 transition-transform duration-200">+</span>
-            </summary>
-            <p class="text-slate-600 mt-4 leading-relaxed">
-              Sí, el tratamiento debe ser continuo. Minoxidil requiere uso permanente para mantener los resultados. Si dejas de usar el producto, el cabello tratado puede comenzar a caer gradualmente en los meses siguientes. Por eso la constancia es fundamental.
-            </p>
-          </details>
-
           <!-- FAQ 3 -->
           <details class="group bg-white p-6 rounded-lg shadow-sm cursor-pointer">
             <summary class="flex justify-between items-center font-semibold text-slate-900 text-lg">
@@ -613,14 +640,6 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
           },
           {
             "@type": "Question",
-            "name": "¿Se cae el cabello si dejo de usarlo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, el tratamiento debe ser continuo para mantener los resultados."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "¿Funciona para mujeres?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -630,9 +649,4 @@ const siteDescription = "Minoxidil Kirkland 5% - Tratamiento tópico líder cont
         ]
       }
     </script>
-  </body>
-</html>
-
-<LayoutGeneral>
-  <Footer client:idle />
 </LayoutGeneral>
