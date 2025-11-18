@@ -3,7 +3,7 @@ import { defineConfig } from "astro/config"
 // Astro integration imports
 import tailwind from "@astrojs/tailwind"
 import sitemap from "@astrojs/sitemap"
-import compress from "astro-compress"
+// import compress from "astro-compress"
 import { VitePWA } from "vite-plugin-pwa"
 import react from "@astrojs/react"; 
 // Helper imports
@@ -19,8 +19,8 @@ export default defineConfig({
 				path: "./tailwind.config.js"
 			}
 		}),
-		sitemap(),
-		compress()
+		sitemap()
+		// compress()
 	],
 	vite: {
 		plugins: [
