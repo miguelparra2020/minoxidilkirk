@@ -57,22 +57,23 @@ const styleUl1Nav = "flex flex-col font-medium p-4 md:p-0 mt-4 border border-gra
             </div>
         </a> -->
       </div>
-      <div class:list={styleDiv6Nav} id="navbar-user">
-          <ul class:list={styleUl1Nav}>
-            {generalConfig.NavBar.linksPages.map(link => ( <>
-              {link.active && 
-              <li class:list={generalConfig.NavBar.classLinksAll}>
-                {link.icon && (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class:list={['bi', link.icon]} viewBox="0 0 16 16">
-                    <path d={link.path1}/>
-                    <path d={link.path2}/>
-                  </svg>
-                )}
-                <a href={link.href} aria-current={link.text === "Inicio" ? "page" : undefined}>{link.text}</a>
-              </li>}</>
-            ))}
-          </ul>
-      </div>
+      <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 border border-gray-300 rounded-full px-2 py-1" id="navbar-user">
+  <ul class="flex flex-row gap-2 p-0 m-0 list-none">
+    {generalConfig.NavBar.linksPages.map(link => (
+      link.active && (
+        <li>
+          <a 
+            href={link.href} 
+            class="inline-block py-2 px-4 text-stone-700 font-open-sans font-semibold text-base hover:bg-gray-200 rounded-full transition-colors duration-200"
+            aria-current={link.text === "Inicio" ? "page" : undefined}
+          >
+            {link.text}
+          </a>
+        </li>
+      )
+    ))}
+  </ul>
+</div>
     </div>
   </nav>
   
