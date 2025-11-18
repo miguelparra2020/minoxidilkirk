@@ -1,6 +1,6 @@
 ---
 // Importaciones
-import { generalConfig } from "@util/generalConfig"
+import { generalConfig, LinkUsuario } from "@util/generalConfig"
 import { CircleUserRound } from "lucide-react"
 
 // Estilos
@@ -35,7 +35,7 @@ const styleA1Nav = `relative inline-flex items-center p-1 text-sm font-medium te
         </div>
       </a>
       <div class:list={styleDiv4Nav}>      
-        <a href="/usuario"type="button" class:list={styleA1Nav}>
+        <a href={LinkUsuario} type="button" class:list={styleA1Nav}>
         <CircleUserRound className="h-10 w-10" />
         </a>
       </div>

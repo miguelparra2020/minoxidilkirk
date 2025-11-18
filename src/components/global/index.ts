@@ -1,5 +1,4 @@
 export { Header } from "./Header"
 export { Layout } from "./Layout"
 export { LayoutGeneral } from "./LayoutGeneral"
-export { ButtonRouter, CustomImagen, InicioBienvenida, InicioProductos, InicioServicios, Titulos, Parrafos, Sesion, DivVertical, Picture169Grande, DivHorizontal, CardInfo, ButtonGeneral, MenuView, GoogleAuth,  ProductsAll, IconGeneral, InicioRedesSociales, CardRedesSociales, Carrusel, ServiciosConAgendamientoInicio, TeamWork, Ubicacion, Footer, ServiciosAgendamientoCards, ServiciosAgendamientoSedes, ServicioAgendadoInfo, ServiciosAgendamientoPersona, ServiciosAgendamientoFecha, ContenedorNotificaciones, ServiciosAgendamientoCardsHeader, ServiciosAgendamientoCardsSearchFilter, ServiciosAgendamientoCardsServicesMap, ServiciosAgendamientoButtonNext, ServiciosAgendamientoCardsModalDetail, QueryProvider, MyComponent, ServiciosAgendamientoFinalUser, UserCalendars, UserCalendarioConAgendamiento, ControlAdmin, ControlResumen, ControlCostosPlataforma, ControlServiciosGenerales, ControlPedidosServicios, ControlServiciosAgenda, ControlAgendas, DescargarApp, IntroCompany} from "./Componentes"
-export { Crear, PaginateStages, Stage1, Stage2, Stage3, Stage4, Stage5 } from "./Crear"
+export {  MenuView, DescargarApp} from "./Componentes"

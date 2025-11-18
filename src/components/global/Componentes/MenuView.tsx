@@ -1,24 +1,15 @@
 import React from 'react'
-import { useState } from "react"
-import { generalConfig } from "@util/generalConfig"
-import { MessageSquareText, Menu, ArrowBigDownDash } from 'lucide-react'
+import {  ArrowBigDownDash } from 'lucide-react'
+import { LinkWhasapp } from "@util/generalConfig";
 
 const MenuView = () => {
-  const [openMenu, setOpenMenu] = useState(false)
-  const [openChat, setOpenChat] = useState(false)
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu)
-  }
-  const toggleChat = () => {
-    setOpenChat(!openChat)
-  }
 
   return (
     <div>
       {/* WhatsApp Button - Bottom Left */}
       <div className="fixed bottom-20 left-4 z-50">
         <a 
-          href="https://wa.me/34622653681?text=Hola%20MAT%20Barber%20Shop" 
+          href={LinkWhasapp}
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center w-12 h-12 

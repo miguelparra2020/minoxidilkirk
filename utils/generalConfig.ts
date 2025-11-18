@@ -37,6 +37,8 @@ export const pathsIconos = {
 export const linkProducts = "https://www.google.com/";
 export const linkServices = "https://www.google.com/";
 export const linkPhotos = "https://www.google.com/";
+export const LinkWhasapp = "https://wa.link/bwcdrb";
+export const LinkUsuario = "https://www.google.com/";
 
             
 export const generalConfig = {
