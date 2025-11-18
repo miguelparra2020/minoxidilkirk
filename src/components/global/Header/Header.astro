@@ -1,8 +1,7 @@
 ---
 // Importaciones
-import {CustomImagen, GetImgPerfil} from "@globals"
-import CarShopping from '@img/carShopping.png';
 import { generalConfig } from "@util/generalConfig"
+import { CircleUserRound } from "lucide-react"
 
 // Estilos
 const styleNav = "bg-white border-gray-200 shadow-sm"
@@ -10,11 +9,6 @@ const styleDiv1Nav = "bg-white border-gray-200 shadow-sm flex items-center justi
 const styleDiv2Nav = "flex items-center space-x-3 rtl:space-x-reverse"
 const styleDiv4Nav = "flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-1"
 const styleA1Nav = `relative inline-flex items-center p-1 text-sm font-medium text-center` 
-const styleSpan2Nav = "sr-only"
-const styleDiv5Nav = "absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2"
-const styleImg1Nav = "rounded-full bg-white"
-const styleDiv6Nav = "items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
-const styleUl1Nav = "flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
 ---
 
 <nav class:list={styleNav}>
@@ -23,11 +17,11 @@ const styleUl1Nav = "flex flex-col font-medium p-4 md:p-0 mt-4 border border-gra
         <div class:list={styleDiv2Nav}>
           <div class:list={styleDiv2Nav}>            
             <picture class="rounded-full">
-              <source srcset={generalConfig.NavBar.logoCompanyWebp} type="image/webp" class="rounded-full shadow"/>
-              <source srcset={generalConfig.NavBar.logoCompanyJpg} type="image/jpeg" class="rounded-full shadow"/>
+              <source srcset={generalConfig.Header.logoCompanyWebp} type="image/webp" class="rounded-full shadow"/>
+              <source srcset={generalConfig.Header.logoCompanyJpg} type="image/jpeg" class="rounded-full shadow"/>
               <img
               class="rounded-full shadow"
-                src={generalConfig.NavBar.logoCompanyPng}
+                src={generalConfig.Header.logoCompanyPng}
                 alt="Logo de la compañía"
                 width={40}
                 height={40}
@@ -35,31 +29,19 @@ const styleUl1Nav = "flex flex-col font-medium p-4 md:p-0 mt-4 border border-gra
             </picture>
             
           </div>          
-          <span class:list={generalConfig.NavBar.classLinksHome} style={{ wordWrap: "break-word" }}>
-            {generalConfig.NavBar.nameCompany}
-          </span>
-           
+          <span class:list={generalConfig.Header.classLinksHome} style={{ wordWrap: "break-word" }}>
+            {generalConfig.Header.nameCompany}
+          </span>           
         </div>
       </a>
       <div class:list={styleDiv4Nav}>      
         <a href="/usuario"type="button" class:list={styleA1Nav}>
-        <GetImgPerfil client:idle/>
-        <!-- <span class:list={styleSpan2Nav}>Notifications</span>
-          <div class:list={styleDiv5Nav}>
-            20
-          </div> -->
+        <CircleUserRound className="h-10 w-10" />
         </a>
-        <!-- <a href="/carrito"type="button" class:list={styleA1Nav}>
-          <CustomImagen src={CarShopping} width={40} height={40} class:list={styleImg1Nav} alt="Carrito de compras"/>
-          <span class:list={styleSpan2Nav}>Notifications</span>
-            <div class:list={styleDiv5Nav}>
-              20
-            </div>
-        </a> -->
       </div>
       <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 border border-gray-300 rounded-full px-2 py-1" id="navbar-user">
   <ul class="flex flex-row gap-2 p-0 m-0 list-none">
-    {generalConfig.NavBar.linksPages.map(link => (
+    {generalConfig.Header.linksPages.map(link => (
       link.active && (
         <li>
           <a 
