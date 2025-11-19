@@ -1,12 +1,28 @@
 ---
+import { LayoutGeneral } from "@globals";
 import ImagenCompanyWebp from '@img/logoCompany.webp'
-import Imagen1 from '@img/img1.jpg'
-import Imagen2 from '@img/img2.jpg'
-import Imagen3 from '@img/img3.jpg'
-import Imagen4 from '@img/img4.jpg'
+import ImagenCompanyJpg from '@img/logoCompany.jpg'
+import ImagenCompanyPng from '@img/logoCompany.png'
+import Imagen1jpg from '@img/img1.jpg'
+import Imagen1webp from '@img/img1.webp'
+import Imagen1avif from '@img/img1.avif'
+import Imagen1png from '@img/img1.png'
+import Imagen2jpg from '@img/img2.jpg'
+import Imagen2webp from '@img/img2.webp'
+import Imagen2avif from '@img/img2.avif'
+import Imagen2png from '@img/img2.png'
+import Imagen3jpg from '@img/img3.jpg'
+import Imagen3webp from '@img/img2.webp'
+import Imagen3avif from '@img/img2.avif'
+import Imagen3png from '@img/img2.png'
+import Imagen4jpg from '@img/img4.jpg'
+import Imagen4webp from '@img/img2.webp'
+import Imagen4avif from '@img/img2.avif'
+import Imagen4png from '@img/img2.png'
 import { ArrowBigRightDash } from "lucide-react";
 import { linkProducts, LinkWhasapp } from "@util/generalConfig";
 ---
+
     <!-- Hero Section -->
     <section class="px-6 py-24 max-w-6xl mx-auto">
       <!-- Título centrado -->
@@ -17,11 +33,15 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
         
         <!-- Logo redondo -->
         <div class="flex justify-center mb-12">
-          <img
-            src={ImagenCompanyWebp}
-            alt="Logo Minoxidil Kirkland"
-            class="w-32 h-32 rounded-full shadow-lg border-4 border-blue-600 object-cover"
-          />
+          <picture>
+            <source srcset={ImagenCompanyWebp} type="image/webp" />
+            <source srcset={ImagenCompanyJpg} type="image/jpeg" />
+            <img
+              src={ImagenCompanyPng}
+              alt="Logo Minoxidil Kirkland"
+              class="w-32 h-32 rounded-full shadow-lg border-4 border-blue-600 object-cover"
+            />
+          </picture>
         </div>
       </div>
 
@@ -29,12 +49,17 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <!-- Imagen a la izquierda -->
         <div class="flex justify-center">
-          <img
-            src={Imagen1}
-            alt="Minoxidil Kirkland 5% - Botella de tratamiento"
-            loading="lazy"
-            class="w-full max-w-md h-auto rounded-2xl shadow-xl border border-slate-200"
-          />
+          <picture>
+            <source srcset={Imagen1avif} type="image/avif" />
+            <source srcset={Imagen1webp} type="image/webp" />
+            <source srcset={Imagen1jpg} type="image/jpeg" />
+            <img
+              src={Imagen1png}
+              alt="Minoxidil Kirkland 5% - Botella de tratamiento"
+              loading="lazy"
+              class="w-full max-w-md h-auto rounded-2xl shadow-xl border border-slate-200"
+            />
+          </picture>
         </div>
         
         <!-- Contenido a la derecha -->
@@ -79,12 +104,17 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <img
-            src={Imagen2}
-            alt="Aplicación de Minoxidil Kirkland"
-            loading="lazy"
-            class="w-full max-w-md h-auto rounded-2xl shadow-xl border border-slate-200"
-          />
+          <picture>
+            <source srcset={Imagen2avif} type="image/avif" />
+            <source srcset={Imagen2webp} type="image/webp" />
+            <source srcset={Imagen2jpg} type="image/jpeg" />
+            <img
+              src={Imagen2png}
+              alt="Aplicación de Minoxidil Kirkland"
+              loading="lazy"
+              class="w-full max-w-md h-auto rounded-2xl shadow-xl border border-slate-200"
+            />
+          </picture>
 
           <div>
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">
@@ -138,12 +168,17 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
 
         <!-- Imagen debajo del título -->
         <div class="flex justify-center mb-12">
-          <img
-            src={Imagen3}
-            alt="Minoxidil Kirkland - Beneficios"
-            loading="lazy"
-            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
-          />
+          <picture>
+            <source srcset={Imagen3avif} type="image/avif" />
+            <source srcset={Imagen3webp} type="image/webp" />
+            <source srcset={Imagen3jpg} type="image/jpeg" />
+            <img
+              src={Imagen3png}
+              alt="Minoxidil Kirkland - Beneficios"
+              loading="lazy"
+              class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+            />
+          </picture>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -235,12 +270,17 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
 
         <!-- Imagen debajo del título -->
         <div class="flex justify-center mb-12">
-          <img
-            src={Imagen4}
-            alt="Modo de uso Minoxidil Kirkland"
-            loading="lazy"
-            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
-          />
+          <picture>
+            <source srcset={Imagen4avif} type="image/avif" />
+            <source srcset={Imagen4webp} type="image/webp" />
+            <source srcset={Imagen4jpg} type="image/jpeg" />
+            <img
+              src={Imagen4png}
+              alt="Modo de uso Minoxidil Kirkland"
+              loading="lazy"
+              class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+            />
+          </picture>
         </div>
 
         <div class="space-y-8">
@@ -351,12 +391,17 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
 
         <!-- Imagen debajo del título -->
         <div class="flex justify-center mb-12">
-          <img
-            src={Imagen1}
-            alt="Resultados Minoxidil Kirkland"
-            loading="lazy"
-            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
-          />
+          <picture>
+            <source srcset={Imagen1avif} type="image/avif" />
+            <source srcset={Imagen1webp} type="image/webp" />
+            <source srcset={Imagen1jpg} type="image/jpeg" />
+            <img
+              src={Imagen1png}
+              alt="Resultados Minoxidil Kirkland"
+              loading="lazy"
+              class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+            />
+          </picture>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -439,12 +484,17 @@ import { linkProducts, LinkWhasapp } from "@util/generalConfig";
 
         <!-- Imagen debajo del título -->
         <div class="flex justify-center mb-12">
-          <img
-            src={Imagen2}
-            alt="Garantía Minoxidil Kirkland"
-            loading="lazy"
-            class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
-          />
+          <picture>
+            <source srcset={Imagen2avif} type="image/avif" />
+            <source srcset={Imagen2webp} type="image/webp" />
+            <source srcset={Imagen2jpg} type="image/jpeg" />
+            <img
+              src={Imagen2png}
+              alt="Garantía Minoxidil Kirkland"
+              loading="lazy"
+              class="w-full max-w-2xl h-auto rounded-2xl shadow-xl border border-slate-200"
+            />
+          </picture>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
