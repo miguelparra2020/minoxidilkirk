@@ -12,6 +12,7 @@ const MenuView = () => {
           href={LinkWhasapp}
           target="_blank" 
           rel="noopener noreferrer"
+          aria-label="Contactar por WhatsApp"
           className="inline-flex items-center justify-center w-12 h-12 
           font-medium bg-green-500 rounded-full hover:bg-green-600 group ring-4 focus:ring-4 ring-green-200 focus:ring-green-400
           focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -23,7 +24,7 @@ const MenuView = () => {
       </div>
 
         <div className="fixed bottom-20 right-4 z-50" >
-      <a href={"/descargar"} type="button" className="inline-flex items-center justify-center w-12 h-12 
+      <a href="/descargar" aria-label="Descargar información" className="inline-flex items-center justify-center w-12 h-12 
       font-medium bg-gray-600 rounded-full hover:bg-gray-700 group ring-4 focus:ring-4 ring-gray-200  focus:ring-gray-500
       focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl">
         <ArrowBigDownDash className="w-6 h-6 text-white" />
